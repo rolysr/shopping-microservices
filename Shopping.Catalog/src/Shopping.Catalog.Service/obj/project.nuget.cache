@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "83UqKmfVkRPjQtJJNKkmKk6K0HiKI0wex6kM1yChgv7D7ws6rH8/ClvcltOfekJR+jgyP6yQISwRKaQgf/QpMQ==",
+  "success": true,
+  "projectFilePath": "/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/Shopping.Catalog.Service.csproj",
+  "expectedPackageFiles": [
+    "/home/roly/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/roly/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/roly/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/roly/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/roly/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/roly/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
