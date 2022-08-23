@@ -3,16 +3,14 @@ using Shopping.Catalog.Service.Models;
 
 namespace Shopping.Catalog.Service.Repositories;
 
-public class ItemsRepository
+public class ItemsRepository : IItemsRepository
 {
     private const string collectionName = "items";
     private readonly IMongoCollection<Item> dbCollection;
     public readonly FilterDefinitionBuilder<Item> filterBuilder = Builders<Item>.Filter;
 
-    public ItemsRepository()
+    public ItemsRepository(IMongoDatabase database)
     {
-        var mongoClient = new MongoClient("mongodb://localhost:27017");
-        var database = mongoClient.GetDatabase("Catalog");
         dbCollection = database.GetCollection<Item>(collectionName);
     }
 
@@ -29,14 +27,14 @@ public class ItemsRepository
 
     public async Task CreateAsync(Item item)
     {
-        if(item is null)
+        if (item is null)
             throw new ArgumentNullException(nameof(item));
         await dbCollection.InsertOneAsync(item);
     }
 
     public async Task UpdateAsync(Item item)
     {
-        if(item is null)
+        if (item is null)
             throw new ArgumentNullException(nameof(item));
 
         FilterDefinition<Item> filter = filterBuilder.Eq(existingItem => existingItem.Id, item.Id);
