@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WPxAP7KJ+ozxanC6/pADOG8eGwopUMM00bxSs4X9ZxY=",
+  "Source": "Shopping.Catalog.Service",
+  "BasePath": "_content/Shopping.Catalog.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

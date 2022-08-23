@@ -1,2 +1,2 @@
 # shopping-microservices
- Shopping web app with microservices
+ Bakend for a shopping web app with microservices

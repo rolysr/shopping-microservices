@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gXXgP6FQHHofdd2ZmfFQwL9xK/h9crNfpxYZ6N8xm3Y=",
+  "Source": "Shopping.Catalog.Service",
+  "BasePath": "_content/Shopping.Catalog.Service",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Shopping.Catalog.Service
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/appsettings.Development.json
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/appsettings.json
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Shopping.Catalog.Service.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Shopping.Catalog.Service.deps.json
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Shopping.Catalog.Service.runtimeconfig.json
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Shopping.Catalog.Service.pdb
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Microsoft.OpenApi.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Catalog/src/Shopping.Catalog.Service/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
