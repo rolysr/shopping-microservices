@@ -1,0 +1,50 @@
+using MongoDB.Driver;
+using Shopping.Catalog.Service.Models;
+
+namespace Shopping.Catalog.Service.Repositories;
+
+public class MongoRepository<T> : IRepository<T> where T : IModel
+{
+    private readonly IMongoCollection<T> dbCollection;
+    public readonly FilterDefinitionBuilder<T> filterBuilder = Builders<T>.Filter;
+
+    public MongoRepository(IMongoDatabase? database, string collectionName)
+    {
+        if(database is null)
+            throw new ArgumentNullException("Null database parameter of type IMongoDatabase");
+        dbCollection = database.GetCollection<T>(collectionName);
+    }
+
+    public async Task<IReadOnlyCollection<T>> GetAllAsync()
+    {
+        return await dbCollection.Find(filterBuilder.Empty).ToListAsync();
+    }
+
+    public async Task<T> GetAsync(Guid id)
+    {
+        FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.Id, id);
+        return await dbCollection.Find(filter).FirstOrDefaultAsync();
+    }
+
+    public async Task CreateAsync(T item)
+    {
+        if (item is null)
+            throw new ArgumentNullException(nameof(item));
+        await dbCollection.InsertOneAsync(item);
+    }
+
+    public async Task UpdateAsync(T item)
+    {
+        if (item is null)
+            throw new ArgumentNullException(nameof(item));
+
+        FilterDefinition<T> filter = filterBuilder.Eq(existingItem => existingItem.Id, item.Id);
+        await dbCollection.ReplaceOneAsync(filter, item);
+    }
+
+    public async Task RemoveAsync(Guid id)
+    {
+        FilterDefinition<T> filter = filterBuilder.Eq(item => item.Id, id);
+        await dbCollection.DeleteOneAsync(filter);
+    }
+} 

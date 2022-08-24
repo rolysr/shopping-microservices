@@ -4,6 +4,7 @@ using MongoDB.Bson.Serialization.Serializers;
 using Shopping.Catalog.Service.Settings;
 using MongoDB.Driver;
 using Shopping.Catalog.Service.Repositories;
+using Shopping.Catalog.Service.Models;
 
 ServiceSettings serviceSettings;
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +14,11 @@ BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
 BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
 
 //Dependency registration for IItemsRepository and ItemsRepository
-builder.Services.AddSingleton<IItemsRepository, ItemsRepository>();
+builder.Services.AddSingleton<IRepository<Item>>(serviceProvider =>
+{
+    var database = serviceProvider.GetService<IMongoDatabase>();
+    return new MongoRepository<Item>(database, "items");
+});
 
 builder.Services.AddControllers(options => 
 {
