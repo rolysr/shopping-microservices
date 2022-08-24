@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Shopping.Catalog.Service.Models;
 using Shopping.Catalog.Service.Dtos;
-using Shopping.Catalog.Service.Repositories;
+using Shopping.Common;
 
 namespace Shopping.Catalog.Service.Controllers;
 

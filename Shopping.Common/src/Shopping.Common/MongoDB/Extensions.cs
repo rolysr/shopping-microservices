@@ -2,10 +2,11 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
-using Shopping.Catalog.Service.Settings;
-using Shopping.Catalog.Service.Models;
+using Shopping.Common.Settings;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Shopping.Catalog.Service.Repositories;
+namespace Shopping.Common.MongoDB;
 
 public static class Extensions
 {
@@ -34,10 +35,10 @@ public static class Extensions
         where T : IModel
     {
         //Dependency registration for IItemsRepository and ItemsRepository
-        services.AddSingleton<IRepository<Item>>(serviceProvider =>
+        services.AddSingleton<IRepository<T>>(serviceProvider =>
         {
             var database = serviceProvider.GetService<IMongoDatabase>();
-            return new MongoRepository<Item>(database, "items");
+            return new MongoRepository<T>(database, "items");
         });
 
         return services;

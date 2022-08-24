@@ -1,4 +1,4 @@
-namespace Shopping.Catalog.Service.Models;
+namespace Shopping.Common;
 
 public interface IModel
 {

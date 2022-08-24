@@ -20,6 +20,8 @@
           "net6.0"
         ],
         "sources": {
+          "/home/roly/.nuget/packages": {},
+          "/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,9 +40,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MongoDB.Driver": {
+            "Shopping.Common": {
               "target": "Package",
-              "version": "[2.17.1, )"
+              "version": "[1.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

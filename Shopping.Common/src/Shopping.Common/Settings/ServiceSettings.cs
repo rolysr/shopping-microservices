@@ -1,4 +1,4 @@
-namespace Shopping.Catalog.Service.Settings;
+namespace Shopping.Common.Settings;
 
 public class ServiceSettings
 {

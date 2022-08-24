@@ -1,3 +1,5 @@
+using Shopping.Common;
+
 namespace Shopping.Catalog.Service.Models;
 
 public class Item : IModel

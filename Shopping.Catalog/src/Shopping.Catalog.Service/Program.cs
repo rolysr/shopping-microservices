@@ -1,6 +1,6 @@
-using Shopping.Catalog.Service.Settings;
-using Shopping.Catalog.Service.Repositories;
 using Shopping.Catalog.Service.Models;
+using Shopping.Common.Settings;
+using Shopping.Common.MongoDB;
 
 ServiceSettings serviceSettings;
 var builder = WebApplication.CreateBuilder(args);
