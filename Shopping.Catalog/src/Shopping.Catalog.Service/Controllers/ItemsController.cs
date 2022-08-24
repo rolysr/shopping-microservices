@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Shopping.Catalog.Service.Models;
 using Shopping.Catalog.Service.Dtos;
-using Shopping.Catalog.Service.Repositories;
+using Shopping.Common;
 
 namespace Shopping.Catalog.Service.Controllers;
 
@@ -9,9 +9,9 @@ namespace Shopping.Catalog.Service.Controllers;
 [Route("items")]
 public class ItemsController : ControllerBase
 {
-    private readonly IItemsRepository itemsRepository;
+    private readonly IRepository<Item> itemsRepository;
 
-    public ItemsController(IItemsRepository itemsRepository)
+    public ItemsController(IRepository<Item> itemsRepository)
     {
         this.itemsRepository = itemsRepository;
     }
