@@ -5,8 +5,8 @@ namespace Shopping.Inventory.Service;
 
 public static class Extensions
 {
-    public static InventoryItemDto AsDto(this InventoryItem item)
+    public static InventoryItemDto AsDto(this InventoryItem item, string name, string description)
     {
-        return new InventoryItemDto { CatalogItemId = item.CatalogItemId, Quantity = item.Quantity, AcquiredDate = item.AcquiredDate };
+        return new InventoryItemDto { CatalogItemId = item.CatalogItemId, Name = name, Description = description, Quantity = item.Quantity, AcquiredDate = item.AcquiredDate };
     }
 }
