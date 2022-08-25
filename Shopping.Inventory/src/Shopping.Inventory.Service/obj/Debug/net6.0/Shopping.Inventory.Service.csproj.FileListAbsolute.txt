@@ -43,3 +43,6 @@
 /home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/obj/Debug/net6.0/Shopping.Inventory.Service.pdb
 /home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/obj/Debug/net6.0/Shopping.Inventory.Service.genruntimeconfig.cache
 /home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/obj/Debug/net6.0/ref/Shopping.Inventory.Service.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/Microsoft.Extensions.Http.Polly.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/Polly.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/Polly.Extensions.Http.dll
