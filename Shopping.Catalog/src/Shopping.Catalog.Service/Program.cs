@@ -1,9 +1,14 @@
 using Shopping.Catalog.Service.Models;
 using Shopping.Common.Settings;
 using Shopping.Common.MongoDB;
+using Shopping.Common.MassTransit;
+using MassTransit;
 
 ServiceSettings serviceSettings;
 var builder = WebApplication.CreateBuilder(args);
+
+//Getting the services settings from appsettings.json
+serviceSettings = builder.Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
 
 builder.Services.AddControllers(options => 
 {
@@ -13,10 +18,7 @@ builder.Services.AddControllers(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Getting the services settings from appsettings.json
-serviceSettings = builder.Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
-
-builder.Services.AddMongo().AddMongoRepository<Item>("item");
+builder.Services.AddMongo().AddMongoRepository<Item>("item").AddMassTransitWithRabbitMq();
 
 var app = builder.Build();
 

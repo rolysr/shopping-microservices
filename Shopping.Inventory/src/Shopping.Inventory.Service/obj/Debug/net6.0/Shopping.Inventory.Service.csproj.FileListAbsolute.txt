@@ -46,3 +46,11 @@
 /home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/Microsoft.Extensions.Http.Polly.dll
 /home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/Polly.dll
 /home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/Polly.Extensions.Http.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/MassTransit.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/MassTransit.Abstractions.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/MassTransit.AspNetCoreIntegration.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/MassTransit.RabbitMqTransport.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/RabbitMQ.Client.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/Shopping.Catalog.Contracts.dll
+/home/roly/Desktop/ROLY/Dotnet/shopping-microservices/Shopping.Inventory/src/Shopping.Inventory.Service/bin/Debug/net6.0/System.Text.Json.dll

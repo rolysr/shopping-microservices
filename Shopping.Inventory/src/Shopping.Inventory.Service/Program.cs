@@ -3,12 +3,15 @@ using Polly.Timeout;
 using Shopping.Common.MongoDB;
 using Shopping.Inventory.Service.Models;
 using Shopping.Inventory.Service.Clients;
+using Shopping.Common.MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddMongo()
-                .AddMongoRepository<InventoryItem>("inventoryitems");
+                .AddMongoRepository<InventoryItem>("inventoryitems")
+                .AddMongoRepository<CatalogItem>("catalogitems")
+                .AddMassTransitWithRabbitMq();
 
 Random jitterer = new Random();
 
