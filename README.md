@@ -5,7 +5,7 @@ shopping-microservices is a backend ready-to-deploy project that is composed by 
 
 ## Prerequisites 
 - [.Net Core SDK v6.0.300](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-- **(optional)** Some **UNIX** based OS (this projects was deploy on Ubuntu 22.04)
+- **(optional)** Some **UNIX** based OS (this projects was deployed on Ubuntu 22.04)
 
 ## How to run
   - Run the Catalog service 
